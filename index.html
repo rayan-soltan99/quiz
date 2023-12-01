@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row justify-content-md-center first-row">
+        <div class="col-4 label1">
+            <input type="text" class="form-control" id="input-fruit" placeholder="Enter the name of fruit or legume">
+        </div>
+        <div class="col-2">
+            <input type="radio" id="fruit" name="fruit-legume" value="fruit">
+            <label for="fruit">Fruits</label>
+            <input type="radio" id="legume" name="fruit-legume" value="legume">
+            <label for="fruit">Legumes</label>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-4">
+            <button type="button" class="btn btn-primary" id="btn-add-specific">Add to specific list</button>
+            <button type="button" class="btn btn-danger" id="btn-add-general">Add to general list</button>
+        </div>
+    </div>
+
+    <div class="container init-container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-3 mt-4">
+                <button type="button" class="btn btn-primary" id="btn-search">Search for item</button>
+                <button type="button" class="btn btn-danger" id="btn-delete">Delete an item</button>
+            </div>
+            <div class="col-8 mt-4">
+                <input type="text" class="search-text" id="search-text" placeholder="Search for a Fruits or Legumes">
+            </div>
+            <hr class="line">
+        </div>
+        <div class="row d-felx align-items-center justify-content-center">
+            <div class="col-4 mx-auto"  id="first-label">
+                <label class="label mb-2">List of Fruits</label>
+            </div>
+            <div class="col-4 mx-auto"  id="second-label">
+                <label class="label mb-2">List of Fruits & Legumes</label>
+            </div>
+            <div class="col-4 mx-auto"  id="third-label">
+                <label class="label mb-2">List of Legumes</label>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-3 mx-2 mb-4 list"  id="first-list">
+                <div class="alert alert-success mt-2" role="alert">Fruits! - Apple</div>
+                <div class="alert alert-success" role="alert">Fruits! - Mangoes</div>
+            </div>
+            <div class="col-4 mx-2 mb-4 list"  id="second-list">
+                <div class="alert alert-primary mt-2" role="alert">Fruits! - Pineapples</div>
+                <div class="alert alert-primary" role="alert">Fruits! - Bananas</div>
+                <div class="alert alert-primary" role="alert">Legumes! - Potato</div>
+                <div class="alert alert-primary" role="alert">Legumes! - Lentils</div>
+            </div>
+            <div class="col-4 mx-2 mb-4 list"  id="third-list">
+                <div class="alert alert-warning mt-2" role="alert">Legumes! - Brocoli</div>
+                <div class="alert alert-warning" role="alert">Legumes! - Green Beans</div>
+                
+            </div>
+        </div>
+    </div>
+  
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>;
+</body>
+</html>
